@@ -23,22 +23,27 @@ class SiteParser(HTMLParser):
                 self.links.append((self.getpos()[0], values[key]))
 
 
-def main() -> None:
+def check_site(root: Path) -> tuple[list[str], int]:
     parser = SiteParser()
-    parser.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+    parser.feed((root / "index.html").read_text(encoding="utf-8"))
     errors: list[str] = []
     for line, link in parser.links:
         parsed = urlsplit(link)
         if parsed.scheme or parsed.netloc or link.startswith("//"):
             continue
         path = unquote(parsed.path)
-        if path and (path.startswith("/") or not (ROOT / path).is_file()):
+        if path and (path.startswith("/") or not (root / path).is_file()):
             errors.append(f"line {line}: missing local asset {link}")
         if parsed.fragment and (not path or path == "index.html") and unquote(parsed.fragment) not in parser.ids:
             errors.append(f"line {line}: missing anchor {link}")
+    return errors, len(parser.links)
+
+
+def main() -> None:
+    errors, count = check_site(ROOT)
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"Checked {len(parser.links)} links and assets")
+    print(f"Checked {count} links and assets")
 
 
 if __name__ == "__main__":
