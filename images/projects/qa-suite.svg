@@ -2,7 +2,7 @@
   <rect width="800" height="500" fill="#0b1322"/>
 
   <!-- header -->
-  <text x="44" y="58" font-family="Roboto Mono, ui-monospace, Menlo, monospace" font-size="15" font-weight="500" fill="#34d399">InvestaTrade · QA Regression Suite</text>
+  <text x="44" y="58" font-family="Roboto Mono, ui-monospace, Menlo, monospace" font-size="15" font-weight="500" fill="#34d399">QA results summary · not an app capture</text>
   <text x="44" y="82" font-family="Roboto Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#9aa7bd">142 cases · 13 modules · 3 environments</text>
   <rect x="612" y="40" width="144" height="32" rx="16" fill="rgba(52,211,153,.1)" stroke="#34d399"/>
   <text x="684" y="60" font-family="Roboto Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#34d399" text-anchor="middle">426 PASSED</text>

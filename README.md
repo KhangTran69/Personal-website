@@ -36,9 +36,10 @@ https://khangtran-812.github.io/Personal-website/.
 ## Editing notes
 
 - Theme colors and fonts are CSS custom properties at the top of `style.css`.
-- Project cards live in `index.html` under `#projects`; the preview graphics are
-  SVG placeholders in `images/projects/` — swap them for real app screenshots
-  (PNG/JPG) when available, keeping the same filenames or updating `src`.
+- Project cards live in `index.html` under `#projects`. The Garbage Route
+  Optimizer and QA graphics are authored illustrations, labeled as previews;
+  the PoPify, help-desk, and SMS images are app captures. Keep that distinction
+  clear when replacing assets.
 - `resume.pdf`: edit the DOCX source, then regenerate:
   `soffice --headless --convert-to pdf --outdir . <file>.docx` and rename to `resume.pdf`.
 - Factual metrics (426 tests, 100% pass rate, 41,575 views…) come from the
