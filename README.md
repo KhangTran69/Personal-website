@@ -17,6 +17,10 @@ images/       # portrait, favicon.svg, projects/*.svg preview cards
 
 ## Run locally
 
+Run `python3 scripts/check_site.py` to verify local assets and section links,
+and `node --check script.js` to check JavaScript syntax. CI runs both checks
+on pushes and pull requests. External links and visual behavior are not checked.
+
 ```bash
 python3 -m http.server 8123
 # open http://127.0.0.1:8123
