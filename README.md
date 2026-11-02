@@ -30,8 +30,12 @@ python3 -m http.server 8123
 
 ## Deploy (GitHub Pages)
 
-Push to `main`; Pages serves from the repo root at
-https://khangtran-812.github.io/Personal-website/.
+The live portfolio URL, https://khangtran-812.github.io/Personal-website/, is
+served from the `KhangTran-812` account. This repository is the `KhangTran69`
+fork, so pushing here does not update that live site. To publish this fork as a
+separate project site, enable GitHub Pages for this repository and select the
+`main` branch with the repository root as its source; its expected URL is
+https://khangtran69.github.io/Personal-website/.
 
 ## Editing notes
 
