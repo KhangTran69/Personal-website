@@ -15,6 +15,17 @@ resume.pdf    # downloadable resume (generated from the fixed DOCX)
 images/       # portrait, favicon.svg, projects/*.svg preview cards
 ```
 
+## Behavior review map
+
+| Behavior | Read first | Verification evidence and limits |
+|----------|------------|----------------------------------|
+| Mobile navigation opens, updates `aria-expanded`, and closes after a link is chosen | [`index.html` nav controls](index.html#L24-L34), [`initNav`](script.js#L38-L56), [responsive nav styles](style.css#L650-L668) | `node --check script.js` checks syntax only. No automated test exercises menu interaction or assistive-technology output. |
+| Active section highlighting and reveal-on-scroll | [`initScrollspy` and `initReveal`](script.js#L58-L110), [active-link and reveal styles](style.css#L97-L106) and [motion styles](style.css#L634-L695) | `node --check script.js` checks syntax only. Static checks do not verify observer behavior, animation, or reduced-motion rendering. |
+| Local section links and bundled assets | [`index.html`](index.html), [`check_site.py`](scripts/check_site.py), [`test_check_site.py`](tests/test_check_site.py) | CI runs `python scripts/check_site.py` and `python -m unittest discover -s tests -v`. These cover local paths and in-page anchors, not external destinations or visual layout. |
+| Typing fallback and current footer year | [`#typed`](index.html#L44), [`#year`](index.html#L254), [`initTyped`](script.js#L15-L36), and [`initYear`](script.js#L112-L116) | `node --check script.js` checks syntax only; dynamic rendering is not covered by automated tests. |
+
+For changes to interactive behavior, inspect the linked HTML, JavaScript, and CSS together, then check desktop and mobile behavior in a browser. The repository's automated checks do not establish visual or screen-reader behavior.
+
 ## Run locally
 
 Run `python3 scripts/check_site.py` to verify local assets and section links,
