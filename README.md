@@ -1,5 +1,9 @@
 # Personal Website
 
+## Repository status
+
+This repository is maintained as a historical predecessor and reference. The canonical repository is [KhangTran-812/Personal-website](https://github.com/KhangTran-812/Personal-website), and the live site is available at [khangtran-812.github.io/Personal-website](https://khangtran-812.github.io/Personal-website/).
+
 Portfolio of **Khang B. Tran** — CS student & aspiring application developer (Angeles City, PH).
 
 Built with plain HTML/CSS/JS — no build step. Dark slate theme, emerald accent,
