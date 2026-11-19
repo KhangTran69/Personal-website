@@ -2,7 +2,7 @@
 
 ## Repository status
 
-This repository is maintained as a historical predecessor and reference. The canonical repository is [KhangTran-812/Personal-website](https://github.com/KhangTran-812/Personal-website), and the live site is available at [khangtran-812.github.io/Personal-website](https://khangtran-812.github.io/Personal-website/).
+Khang Tran selected this repository as the canonical source for future portfolio website changes on 2026-11-20. The currently deployed site is still served from [KhangTran-812/Personal-website](https://github.com/KhangTran-812/Personal-website) at [khangtran-812.github.io/Personal-website](https://khangtran-812.github.io/Personal-website/). Changes in this repository alone do not update that live site; aligning its Pages deployment with this source is a separate reviewed deployment change.
 
 Portfolio of **Khang B. Tran** — CS student & aspiring application developer (Angeles City, PH).
 
@@ -46,11 +46,15 @@ python3 -m http.server 8123
 ## Deploy (GitHub Pages)
 
 The live portfolio URL, https://khangtran-812.github.io/Personal-website/, is
-served from the `KhangTran-812` account. This repository is the `KhangTran69`
-fork, so pushing here does not update that live site. To publish this fork as a
-separate project site, enable GitHub Pages for this repository and select the
-`main` branch with the repository root as its source; its expected URL is
-https://khangtran69.github.io/Personal-website/.
+currently served from [KhangTran-812/Personal-website](https://github.com/KhangTran-812/Personal-website).
+This repository is the canonical source, but is not yet the live Pages source;
+commits here do not publish updates to the current live URL. Aligning the Pages
+deployment with this canonical repository requires a separate reviewed
+release change.
+
+If Pages is enabled here as a separate project site, its expected URL is
+https://khangtran69.github.io/Personal-website/; that would not update the
+current live URL.
 
 ## Editing notes
 
