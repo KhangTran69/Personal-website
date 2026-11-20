@@ -93,57 +93,121 @@
       </div>
       <div class="project-grid">
         <article class="project-card reveal">
-          <a class="project-media" href="https://github.com/KhangTran69/angeles-city-garbage-optimizer" target="_blank" rel="noreferrer" aria-label="View Garbage Route Optimizer on GitHub">
-            <img src="images/projects/garbage-optimizer.svg" alt="" loading="lazy">
+          <a class="project-media" href="https://github.com/KhangTran69/flowops" target="_blank" rel="noreferrer" aria-label="Open the FlowOps GitHub repository; this is an illustrative workflow graphic">
+            <img src="images/projects/flowops.svg" alt="Illustration of a sample support ticket moving through routing, approval, and an audit record" width="800" height="500" loading="lazy">
           </a>
           <div class="project-body">
-            <p class="project-index">01 · Optimization Research</p>
-            <h3>Garbage Route Optimizer</h3>
-            <p class="project-desc">A web application that solves capacity-aware vehicle routing for garbage trucks using a Genetic Algorithm with 2-opt local search.</p>
+            <p class="project-index">01 · Workflow Automation</p>
+            <h3>FlowOps</h3>
+            <p class="project-desc">A workflow automation API for support-ticket intake and employee onboarding. It validates and routes requests, gates sensitive steps for approval, and records execution history.</p>
             <ul class="project-highlights">
-              <li>Integrated real OpenStreetMap road networks with interactive multi-truck maps.</li>
-              <li>Live tracking for fuel, cost, and CO₂ emissions.</li>
+              <li>The local reviewer demo uses synthetic tickets to show routing, idempotent replay, and a tenant-scoped read boundary.</li>
+              <li>Provider integrations need external configuration; their live behavior is outside the local demo.</li>
+            </ul>
+            <ul class="tag-list" aria-label="Tech stack">
+              <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>SQLite</li><li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/KhangTran69/flowops" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/KhangTran69/flowops/blob/main/docs/portfolio-demo.md" target="_blank" rel="noreferrer">Run path, evidence &amp; limits <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-media" href="https://github.com/KhangTran69/angeles-city-garbage-optimizer" target="_blank" rel="noreferrer" aria-label="Open the Garbage Route Optimizer GitHub repository; this is an illustrative project graphic">
+            <img src="images/projects/garbage-optimizer.svg" alt="Illustrative preview graphic for Garbage Route Optimizer" width="800" height="500" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-index">02 · Optimization Research</p>
+            <h3>Garbage Route Optimizer</h3>
+            <p class="project-desc">A thesis research prototype for approximate, capacity-aware truck routing using a Genetic Algorithm with 2-opt local search.</p>
+            <ul class="project-highlights">
+              <li>The app can use OpenStreetMap road distances and interactive multi-truck maps; this benchmark used built-in coordinates and straight-line distances.</li>
+              <li>Fuel, cost, and CO₂ values are estimates from configured assumptions. Route quality on live road data is unverified.</li>
             </ul>
             <ul class="tag-list" aria-label="Tech stack">
               <li>Python</li><li>Streamlit</li><li>OSMnx</li><li>Folium</li>
             </ul>
             <div class="project-links">
               <a href="https://github.com/KhangTran69/angeles-city-garbage-optimizer" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/KhangTran69/angeles-city-garbage-optimizer/blob/main/README.md#reproduce-the-optimizer-sensitivity-report" target="_blank" rel="noreferrer">Run path, evidence &amp; limits <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
 
         <article class="project-card reveal">
-          <a class="project-media" href="https://github.com/KhangTran69/it-help-desk" target="_blank" rel="noreferrer" aria-label="View IT Help Desk and Asset Management System on GitHub">
-            <img src="images/projects/it-help-desk.svg" alt="" loading="lazy">
+          <a class="project-media" href="https://github.com/KhangTran69/it-help-desk" target="_blank" rel="noreferrer" aria-label="Open the IT Help Desk GitHub repository; the linked image is an application screenshot">
+            <img src="images/projects/it-help-desk.png" alt="IT Help Desk application screenshot" width="1200" height="750" loading="lazy">
           </a>
           <div class="project-body">
-            <p class="project-index">02 · Full-Stack Development</p>
+            <p class="project-index">03 · Full-Stack Development</p>
             <h3>IT Help Desk &amp; Asset Management System</h3>
-            <p class="project-desc">A full-stack enterprise application featuring secure authentication, role-based access control, and ticket tracking.</p>
+            <p class="project-desc">Employees can request support while technicians manage role-scoped ticket and asset workflows with visible progress and audit history.</p>
             <ul class="project-highlights">
               <li>Normalized databases with Flyway migrations and CSRF protection.</li>
-              <li>Code reliability ensured with JUnit/Mockito tests.</li>
+              <li>The local H2 walkthrough uses a seeded synthetic ticket.</li>
             </ul>
             <ul class="tag-list" aria-label="Tech stack">
               <li>Java</li><li>Spring Boot</li><li>Thymeleaf</li><li>MySQL</li><li>Spring Security</li>
             </ul>
             <div class="project-links">
               <a href="https://github.com/KhangTran69/it-help-desk" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/KhangTran69/it-help-desk/blob/main/README.md#local-demo-walkthrough" target="_blank" rel="noreferrer">Run path, evidence &amp; limits <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-media" href="https://github.com/KhangTran69/popify" target="_blank" rel="noreferrer" aria-label="Open the PoPify GitHub repository; the linked image is an application screenshot">
+            <img src="images/projects/popify.jpg" alt="PoPify application screenshot" width="1200" height="750" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-index">04 · Workflow Automation</p>
+            <h3>PoPify</h3>
+            <p class="project-desc">A local operator workflow for delayed orders that drafts a fact-based reply, asks for human approval, and records the mock outcome.</p>
+            <ul class="project-highlights">
+              <li>The Nov 20 local suite passed 113 tests; the isolated Compose demo exercised local n8n workflows with synthetic orders and mock actions.</li>
+              <li>Checks cover synthetic approval, rejection, retry, and recovery paths; live third-party services were not evaluated.</li>
+            </ul>
+            <ul class="tag-list" aria-label="Tech stack"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>n8n</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/KhangTran69/popify" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/KhangTran69/popify#readme" target="_blank" rel="noreferrer">Run path, evidence &amp; limits <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-media" href="https://github.com/KhangTran69/sms-spam-detector" target="_blank" rel="noreferrer" aria-label="Open the Philippine SMS Spam Detector GitHub repository; the linked image is an application screenshot">
+            <img src="images/projects/sms-spam-detector.png" alt="Philippine SMS Spam Detector screenshot" width="1200" height="750" loading="lazy">
+          </a>
+          <div class="project-body">
+            <p class="project-index">05 · Machine Learning</p>
+            <h3>Philippine SMS Spam Detector</h3>
+            <p class="project-desc">An assistive classifier and web interface for checking suspicious messages, with signals shown alongside predictions.</p>
+            <ul class="project-highlights">
+              <li>Supports single, batch, and side-by-side message checks.</li>
+              <li>Reproducible evaluation is limited to synthetic and reference data; representative Philippine SMS accuracy is unverified.</li>
+            </ul>
+            <ul class="tag-list" aria-label="Tech stack"><li>Python</li><li>FastAPI</li><li>scikit-learn</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/KhangTran69/sms-spam-detector" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/KhangTran69/sms-spam-detector#quickstart" target="_blank" rel="noreferrer">Run path, evidence &amp; limits <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-media" aria-hidden="true">
-            <img src="images/projects/qa-suite.svg" alt="" loading="lazy">
+            <img src="images/projects/qa-suite.svg" alt="" width="800" height="500" loading="lazy">
           </div>
           <div class="project-body">
-            <p class="project-index">03 · Quality Assurance</p>
+            <p class="project-index">06 · Quality Assurance</p>
             <h3>Investagrams QA Regression Suite</h3>
             <p class="project-desc">Built and executed a 142-case regression suite across 13 modules (KYC, portfolio, watchlist) for the InvestaTrade web app.</p>
             <ul class="project-highlights">
-              <li>100% pass rate across 426 test cases (142 × 3 environments).</li>
+              <li>All 142 planned cases passed in each of three test environments (426 executions); this describes the tested suite, not the absence of product defects.</li>
               <li>Prioritized cases by risk, covering boundary and negative inputs.</li>
             </ul>
             <ul class="tag-list" aria-label="Tech stack">
@@ -151,7 +215,7 @@
             </ul>
             <div class="project-links">
               <a href="resume.pdf">See QA results in my résumé (PDF) <span aria-hidden="true">↗</span></a>
-              <a href="mailto:khangwrktran@gmail.com?subject=QA%20documentation%20request">Ask about QA documentation <span aria-hidden="true">↗</span></a>
+              <a href="mailto:khangwrktran@gmail.com?subject=QA%20documentation%20request">Request QA documentation <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
