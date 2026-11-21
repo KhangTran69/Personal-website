@@ -642,7 +642,6 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 960px) {
   .project-grid { grid-template-columns: 1fr 1fr; }
-  .project-card:last-child { grid-column: 1 / -1; }
   .about-grid { grid-template-columns: 1fr; gap: 44px; }
   .about-photo { justify-content: flex-start; }
 }
